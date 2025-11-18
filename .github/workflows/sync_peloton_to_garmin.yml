@@ -8,7 +8,7 @@ on:
     inputs:
       workoutsToDownload:
         type: number
-        default: "5"
+        default: "15"
       saveLocalCopy:
         type: boolean
         default: false
@@ -95,6 +95,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
