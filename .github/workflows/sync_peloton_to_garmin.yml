@@ -1,4 +1,4 @@
-# This is a workflow that will automatically sync your Peloton rides with Garmin
+SION# This is a workflow that will automatically sync your Peloton rides with Garmin
 
 name: 🔄 Sync Workflow
 
@@ -84,7 +84,7 @@ jobs:
         P2G_PELOTON__PASSWORD: ${{ secrets.P2G_PELOTON__PASSWORD }}
         P2G_GARMIN__EMAIL: ${{ secrets.P2G_GARMIN__EMAIL }}
         P2G_GARMIN__PASSWORD: ${{ secrets.P2G_GARMIN__PASSWORD }}
-        SessionID: ${{ secrets.P2G_PELOTON_SESSIONID }}
+        SESSIONID: ${{ secrets.P2G_PELOTON__SESSIONID }}
         P2G_PELOTON__BEARERTOKEN: ${{ secrets.P2G_PELOTON__BEARERTOKEN }}
         TZ: America/Chicago
 
@@ -95,6 +95,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
