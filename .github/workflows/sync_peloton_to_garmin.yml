@@ -1,4 +1,4 @@
-SION# This is a workflow that will automatically sync your Peloton rides with Garmin
+This is a workflow that will automatically sync your Peloton rides with Garmin
 
 name: 🔄 Sync Workflow
 
@@ -95,6 +95,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
