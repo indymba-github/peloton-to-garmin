@@ -84,7 +84,6 @@ jobs:
         P2G_PELOTON__PASSWORD: ${{ secrets.P2G_PELOTON__PASSWORD }}
         P2G_GARMIN__EMAIL: ${{ secrets.P2G_GARMIN__EMAIL }}
         P2G_GARMIN__PASSWORD: ${{ secrets.P2G_GARMIN__PASSWORD }}
-        ## SessionId: ${{ secrets.P2G_PELOTON__SESSIONID }}  && env.SessionId 
         P2G_PELOTON__BEARERTOKEN: ${{ secrets.BEARERTOKEN }}
         TZ: America/Chicago
 
@@ -95,6 +94,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
